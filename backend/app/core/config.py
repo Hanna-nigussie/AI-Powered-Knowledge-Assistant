@@ -3,6 +3,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     PROJECT_NAME: str = "AI Knowledge Assistant"
     API_V1_STR: str = "/api/v1"
+    GEMINI_API_KEY: str
     
     class Config:
         env_file = ".env"
